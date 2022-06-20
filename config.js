@@ -18,9 +18,9 @@ global.APIKeys = {
 //═══════[modification]════════\\
 
 
-global.owner = process.env.OWNER_NUMBER || '' 
-global.pemilik = process.env.CONTACT_NUMBER || ''
-global.premium = process.env.PREMIUM_NUMBER || ''
+global.owner = process.env.OWNER_NUMBER || '919074210316' 
+global.pemilik = process.env.CONTACT_NUMBER || '919074210316'
+global.premium = process.env.PREMIUM_NUMBER || '919074210316'
 global.pengguna = process.env.USER_NAME || ''
 global.botnma = process.env.BOT_NAME || ''
 global.ownernma = process.env.OWNER_NAME || ''
