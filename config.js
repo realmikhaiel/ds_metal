@@ -1,5 +1,4 @@
 //═══════[© 2022 𝐉𝐈𝐌𝐁𝐑𝐔 𝐯3.]════════\\
-
 // 𝕄𝕀𝕂ℍ𝔸𝕀𝔼𝕃 𝕆𝔽𝔽𝕀ℂ𝔸𝕃
 
 //═══════[modules]════════\\
@@ -17,17 +16,23 @@ global.APIKeys = {
 }
 
 //═══════[modification]════════\\
-global.owner = ['919656265126'] //owner number, u can put multiple owner number, within quotations and seperated by comma.
-global.pemilik = ['919656265126'] //another owner number
-global.premium = ['919656265126'] //premium number
-global.pengguna = 'sᴀʀᴀɴʏᴀɴ' //username
-global.botnma = 'ᴅɪɴᴋᴜ' //bot name
-global.ownernma = 'sᴀʀᴀɴʏᴀɴ' //owner name
-global.packname = 'ᴅɪɴᴋᴜ' //sticker package name
-global.author = 'ʙʏ sᴀʀᴀɴʏᴀɴ' //sticker author name
-global.sessionName = 'session' //session name
-global.prefa = ['#','!','/',''] //prefix
+
+
+global.owner = process.env.OWNER_NUMBER || '' 
+global.pemilik = process.env.CONTACT_NUMBER || ''
+global.premium = process.env.PREMIUM_NUMBER || ''
+global.pengguna = process.env.USER_NAME || ''
+global.botnma = process.env.BOT_NAME || ''
+global.ownernma = process.env.OWNER_NAME || ''
+global.packname = process.env.PACKAGE_NAME || ''
+global.author = process.env.AUTHOR_NAME || ''
+global.sessionName = 'session'
+global.prefa = ['#','!','/'] //prefix 
 global.sp = '⭔' //design
+function convertToBool(text, fault = 'true') {
+  return text === fault ? true : false;
+}
+
 global.mess = {
     success: 'Done ✓',
     admin: 'This Feature Is Only For Admin!',
