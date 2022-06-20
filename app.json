@@ -4,6 +4,46 @@
   "repository": "https://github.com/Mikhaiel/Jimbru-MD",
   "logo": "https://telegra.ph/file/ddaca390b13a4246bf1ef.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  
+  "env": {
+     "SESSION": {
+         "description": "Type Here Your Jimbru-MD Session 😹",
+         "required": false
+ },
+         "BOT_NAME": {
+         "description": "type your bot name 🚀",
+         "required": true
+},
+         "AUTHOR_NAME": {
+         "description": "type your sticker author name here 📚",
+         "required": true
+},
+        "PACKAGE_NAME": {
+        "description": "type your sticker package name 📸",
+        "required": true
+},
+       "OWNER_NAME": {
+       "description": "type your owner name 🦋",
+       "required": true
+},
+       "BOT_NAME": {
+       "description": "type your bot name 🤸",
+       "required": true
+},
+       "CONTACT_NUMBER": {
+       "description": "type your contact number 🤸",
+       "required": true
+},
+       "OWNER_NUMBER": {
+       "description": "owner number, u can put multiple owner number, within quotations and seperated by comma.🤸",
+       "required": true
+},
+       "PREMIUM_NUMBER": {
+       "description": "type your premium number 🤸",
+       "required": true
+}
+    
+},
   "buildpacks": [
     {
       "url": "heroku/nodejs"
@@ -12,7 +52,7 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+      "url": "https://github.com/nrj/heroku-buildpack-imagemagick-webp"
     },
     {
       "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
